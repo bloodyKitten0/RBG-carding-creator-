@@ -1,0 +1,142 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #0f0f0f;
+    color: #ffffff;
+    font-family: 'Segoe UI', sans-serif;
+    min-height: 100vh;
+}
+
+.app {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 40px 20px;
+}
+
+.game {
+    font-size: 36px;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 30px;
+    color: #a78bfa;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+}
+
+.controls {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+    justify-content: center;
+}
+
+.creator {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 40px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+input, select, button {
+    padding: 10px 16px;
+    border-radius: 8px;
+    border: 1px solid #333;
+    background-color: #1a1a1a;
+    color: #ffffff;
+    font-size: 14px;
+}
+
+button {
+    background-color: #7c3aed;
+    border: none;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+button:hover {
+    background-color: #6d28d9;
+    transform: translateY(-2px);
+}
+
+#searchBar {
+    display: block;
+    width: 100%;
+    max-width: 400px;
+    margin: 0 auto 20px;
+}
+
+.observer {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+.god{
+    background-color: #FFE4C4;
+    border: 3px solid goldenrod;
+    font-family: "Cedarville Cursive", cursive;
+    color: #0f0f0f;
+    height: 300px;
+    width: 250px;
+}
+.legendary{
+    background-color: #FFE4C4;
+    font-family: "Roboto Slab", serif;
+    color: #0f0f0f;
+    height: 300px;
+    width: 250px;
+    border: 3px solid white;
+}
+.epic{
+    background-color: #592693;
+    height: 300px;
+    width: 250px;
+    border: 3px solid white;
+}
+.rare{
+    background-color:  #000080;
+    height: 300px;
+    width: 250px;
+    border: 3px solid white;
+}
+.common{
+    background-color:#4CBB17;
+    height: 300px;
+    width: 250px;
+    border: 3px solid white;
+}
+.unranked{
+    background-color: #C0C0C0;
+    height: 300px;
+    width: 250px;
+    border: 3px solid white;
+}
+.god, .legendary, .epic, .rare, .common, .unranked {
+    position: relative;
+    padding: 15px;
+    padding-bottom: 50px; 
+    margin-bottom: 50px;
+}
+
+.delete-btn, .edit-btn {
+    position: absolute;
+    bottom: -40px;
+    width: 100px;
+    
+}
+
+.delete-btn {
+    left: 10px;
+}
+
+.edit-btn {
+    right: 10px;
+}
+#cancel-btn{
+    display: none;
+}

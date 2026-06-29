@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Cedarville+Cursive&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="x2.css">
+</head>
+<body>
+    <div class="app">
+        <header class="game"><h1>Card game</h1></header>
+        <input type="text" id="searchBar" placeholder="search by name">
+        <div class="controls">
+        <select id="filter">
+                <option value="">All Classes</option>
+                <option value="warrior">Warrior</option>
+                <option value="mage">Mage</option>
+                <option value="archer">Archer</option>
+                <option value="assassin">Assassin</option>
+                <option value="alchemist">Alchemist</option>
+            </select>
+            <select id="sort">
+                <option value="highestLevel">From the highest to the lowest</option>
+                <option value="lowestLevel">From the lowest to the highest</option>
+                <option value="AZ">Alphabetically</option>
+            </select>
+            <button id="doomBtn">doom</button>
+        </div>
+        <div class="creator">
+            <input id="userInput" type="text" placeholder="Player name">
+            <input id="levelInput" type="number" placeholder="level (1 - 1000)" min="1" max="1000">
+            <select id="classSelection">
+                <option value="">Choose class</option>
+                <option value="warrior">Warrior</option>
+                <option value="mage">Mage</option>
+                <option value="archer">Archer</option>
+                <option value="assassin">Assassin</option>
+                <option value="alchemist">Alchemist</option>
+            </select>
+            <input type="text" id="describe" placeholder="describe it">
+            <button id="addButton">Add</button>
+            <button id="cancel-btn">cancel</button>
+        </div>
+        <div id="observer" class="observer"></div>
+    </div>
+
+<script src="x24.js"></script>
+</body>
+</html>
